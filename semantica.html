@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101b2d">
   <title>Semántica</title>
   <link rel="stylesheet" href="estilos.css">
 </head>
@@ -16,39 +17,20 @@
 </header>
 
 <!-- // Barra de navegación con menús desplegables -->
-<nav class="navbar" aria-label="Navegación principal">
-  <a href="index.html">Inicio</a>
-  <div class="dropdown">
-    <button class="dropbtn">HTML</button>
-    <div class="dropdown-content">
-      <a href="semantica.html" aria-current="page">Semántica</a>
-      <a href="formulario.html">Formulario</a>
-      <a href="tablas.html">Tablas</a>
-      <a href="listas.html">Listas</a>
-      <a href="etiqueta.html">Etiquetas</a>
-      <a href="hipervinculo.html">Hipervínculos</a>
-      <a href="multimedia.html">Imágenes y Video</a>
-    </div>
-  </div>
-  <div class="dropdown">
-    <button class="dropbtn">CSS</button>
-    <div class="dropdown-content">
-      <a href="css.html">CSS</a>
-      <a href="selector.html">Selectores</a>
-      <a href="estilos-enlace.html">Estilos de enlaces</a>
-    </div>
-  </div>
-  <div class="dropdown">
-    <button class="dropbtn">JavaScript</button>
-    <div class="dropdown-content">
-      <a href="js-intro.html">Intro y variables</a>
-      <a href="js-condicionales.html">Condicionales</a>
-      <a href="js-funciones.html">Funciones</a>
-      <a href="js-for.html">Ciclo for</a>
-      <a href="js-dowhile.html">Do while</a>
-      <a href="js-dom.html">DOM</a>
-      <a href="js-demo.html">Demo</a>
-    </div>
+<nav class="site-nav" aria-label="Navegación principal">
+  <a class="brand" href="index.html"><span class="brand-mark">W</span><span>Web<span class="brand-light">Lab</span></span></a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal"><span class="menu-icon" aria-hidden="true">☰</span><span class="menu-label">Menú</span></button>
+  <div class="nav-menu" id="menu-principal">
+    <a class="nav-link" href="index.html">Inicio</a>
+    <div class="nav-group"><button class="nav-trigger" type="button" aria-expanded="false">HTML <span>⌄</span></button><div class="nav-dropdown">
+      <a href="semantica.html">Semántica</a><a href="formulario.html">Formulario</a><a href="tablas.html">Tablas</a><a href="listas.html">Listas</a><a href="etiqueta.html">Etiquetas</a><a href="hipervinculo.html">Hipervínculos</a><a href="multimedia.html">Imágenes y video</a>
+    </div></div>
+    <div class="nav-group"><button class="nav-trigger" type="button" aria-expanded="false">CSS <span>⌄</span></button><div class="nav-dropdown">
+      <a href="css.html">CSS</a><a href="selector.html">Selectores</a><a href="estilos-enlace.html">Estilos de enlaces</a>
+    </div></div>
+    <div class="nav-group"><button class="nav-trigger" type="button" aria-expanded="false">JavaScript <span>⌄</span></button><div class="nav-dropdown">
+      <a href="js-intro.html">Intro y variables</a><a href="js-condicionales.html">Condicionales</a><a href="js-funciones.html">Funciones</a><a href="js-for.html">Ciclo for</a><a href="js-dowhile.html">Do while</a><a href="js-dom.html">DOM</a><a href="js-demo.html">Demo</a>
+    </div></div>
   </div>
 </nav>
 
@@ -88,5 +70,6 @@
 </footer>
 
 
+<script src="app.js" defer></script>
 </body>
 </html>

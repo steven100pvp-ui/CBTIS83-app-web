@@ -3,20 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Multimedia</title>
+  <meta name="description" content="Sitio educativo para aprender HTML, CSS y JavaScript con ejemplos prácticos.">
+  <title>Multimedia | Aprende Desarrollo Web</title>
   <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-
-<!-- // Header principal del sitio -->
-<div class="header">
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<header class="header">
   <h1>Construye Aplicaciones Web</h1>
   <p>HTML · CSS · JavaScript</p>
-</div>
-
-<!-- // Barra de navegación con menús desplegables -->
-<div class="navbar">
-  <a href="index.html">Inicio</a>
+</header>
+<nav class="navbar" aria-label="Navegación principal">
+  <a href="index.html" class="active">Inicio</a>
   <div class="dropdown">
     <button class="dropbtn">HTML</button>
     <div class="dropdown-content">
@@ -26,7 +24,7 @@
       <a href="listas.html">Listas</a>
       <a href="etiqueta.html">Etiquetas</a>
       <a href="hipervinculo.html">Hipervínculos</a>
-      <a href="multimedia.html">Imágenes y Video</a>
+      <a href="multimedia.html" aria-current="page">Imágenes y Video</a>
     </div>
   </div>
   <div class="dropdown">
@@ -49,47 +47,54 @@
       <a href="js-demo.html">Demo</a>
     </div>
   </div>
-</div>
+</nav>
+<main class="main" id="contenido">
+  <section class="page-intro">
+    <p class="eyebrow">HTML · MULTIMEDIA</p>
+    <h2>Imágenes y video</h2>
+    <p>Los elementos multimedia hacen que una página sea más visual e interesante. En esta sección encontrarás imágenes adaptables y un video con controles.</p>
+  </section>
 
-<!-- // Contenido principal de la página -->
-<div class="main">
+  <section class="card">
+    <h2>Galería de imágenes</h2>
+    <p>Cada imagen utiliza el atributo <strong>alt</strong> para describir su contenido y mejorar la accesibilidad.</p>
+    <div class="gallery">
+      <figure>
+        <img src="web-dev.jpg" alt="Ilustración relacionada con el desarrollo web" loading="lazy">
+        <figcaption>Desarrollo web</figcaption>
+      </figure>
+      <figure>
+        <img src="code.jpg" alt="Código de programación en una pantalla" loading="lazy">
+        <figcaption>Código de programación</figcaption>
+      </figure>
+      <figure>
+        <img src="html.jpg" alt="Ejemplo visual de código HTML" loading="lazy">
+        <figcaption>Lenguaje HTML</figcaption>
+      </figure>
+      <figure>
+        <img src="gato.jpg" alt="Fotografía de un gato" loading="lazy">
+        <figcaption>Imagen de ejemplo</figcaption>
+      </figure>
+      <figure class="wide-figure">
+        <img src="1.png" alt="Imagen panorámica utilizada en el proyecto" loading="lazy">
+        <figcaption>Imagen adicional del proyecto</figcaption>
+      </figure>
+    </div>
+  </section>
 
-
-<!-- // Imagen de ejemplo agregada (estilo W3Schools / fuente libre) -->
-<div class="card">
-  <h2>Imagen de la página</h2>
-  <p>Ejemplo de imagen usando la etiqueta <strong>&lt;img&gt;</strong> (como en W3Schools).</p>
-  <div class="img-box">
-    <img src="1.png" alt="Imagen de práctica del proyecto" width="400">
-  </div>
-</div>
-<div class="card">
-  <h2>Imágenes</h2>
-  <p>Imágenes con atributo <strong>alt</strong> y tamaño adaptable.</p>
-  <div class="img-box">
-    <img src="gato.jpg" alt="Foto de un gato" width="280">
-  </div>
-  <div class="img-box">
-    <img src="1.png" alt="Imagen de práctica del proyecto" width="280">
-  </div>
-</div>
-<div class="card">
-  <h2>Video</h2>
-  <p>Video con controles de reproducción.</p>
-  <video controls>
-    <source src="video.mp4" type="video/mp4">
-    Tu navegador no soporta video.
-  </video>
-</div>
-
-</div>
-
-<!-- // Pie de página -->
-<div class="footer">
+  <section class="card video-card">
+    <h2>Sección de video</h2>
+    <p>Reproduce el video local del proyecto. Utiliza los controles para iniciar, pausar o ajustar el volumen.</p>
+    <video controls preload="metadata" playsinline>
+      <source src="video.mp4" type="video/mp4">
+      Tu navegador no puede reproducir este video. Puedes actualizar tu navegador e intentarlo de nuevo.
+    </video>
+    <p class="small-note">Si el video no inicia, asegúrate de abrir la página desde la carpeta completa del proyecto para que pueda encontrar el archivo <strong>video.mp4</strong>.</p>
+  </section>
+</main>
+<footer class="footer">
   <p>Proyecto escolar · <a href="index.html">Inicio</a> ·
   <a href="https://www.w3schools.com" target="_blank" rel="noopener">W3Schools</a></p>
-</div>
-
-
+</footer>
 </body>
 </html>

@@ -7,15 +7,16 @@
   <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
 
 <!-- // Header principal del sitio -->
-<div class="header">
+<header class="header">
   <h1>Construye Aplicaciones Web</h1>
   <p>HTML · CSS · JavaScript</p>
-</div>
+</header>
 
 <!-- // Barra de navegación con menús desplegables -->
-<div class="navbar">
+<nav class="navbar" aria-label="Navegación principal">
   <a href="index.html">Inicio</a>
   <div class="dropdown">
     <button class="dropbtn">HTML</button>
@@ -33,7 +34,7 @@
     <button class="dropbtn">CSS</button>
     <div class="dropdown-content">
       <a href="css.html">CSS</a>
-      <a href="selector.html">Selectores</a>
+      <a href="selector.html" aria-current="page">Selectores</a>
       <a href="estilos-enlace.html">Estilos de enlaces</a>
     </div>
   </div>
@@ -49,24 +50,24 @@
       <a href="js-demo.html">Demo</a>
     </div>
   </div>
-</div>
+</nav>
 
 <!-- // Contenido principal de la página -->
-<div class="main">
+<main class="main" id="contenido">
 
 
 <!-- // Imagen de ejemplo agregada (estilo W3Schools / fuente libre) -->
-<div class="card">
+<section class="card">
   <h2>Imagen de la página</h2>
   <p>Ejemplo de imagen usando la etiqueta <strong>&lt;img&gt;</strong> (como en W3Schools).</p>
   <div class="img-box">
     <img src="web-dev.jpg" alt="Imagen de desarrollo web (fuente libre)" width="400">
   </div>
-</div>
-<div class="card">
+</section>
+<section class="card">
   <h2>Selectores CSS</h2>
   <table>
-    <tr><th>Tipo</th><th>Ejemplo</th></tr>
+    <tr><th scope="col">Tipo</th><th scope="col">Ejemplo</th></tr>
     <tr><td>Etiqueta</td><td>p { color: black; }</td></tr>
     <tr><td>Clase</td><td>.card { padding: 20px; }</td></tr>
     <tr><td>ID</td><td>#ok { display: none; }</td></tr>
@@ -75,15 +76,15 @@
   font-family: Verdana, sans-serif;
   background-color: #f1f1f1;
 }</div>
-</div>
+</section>
 
-</div>
+</main>
 
 <!-- // Pie de página -->
-<div class="footer">
+<footer class="footer">
   <p>Proyecto escolar · <a href="index.html">Inicio</a> ·
   <a href="https://www.w3schools.com" target="_blank" rel="noopener">W3Schools</a></p>
-</div>
+</footer>
 
 
 </body>

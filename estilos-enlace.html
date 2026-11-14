@@ -7,15 +7,16 @@
   <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
 
 <!-- // Header principal del sitio -->
-<div class="header">
+<header class="header">
   <h1>Construye Aplicaciones Web</h1>
   <p>HTML · CSS · JavaScript</p>
-</div>
+</header>
 
 <!-- // Barra de navegación con menús desplegables -->
-<div class="navbar">
+<nav class="navbar" aria-label="Navegación principal">
   <a href="index.html">Inicio</a>
   <div class="dropdown">
     <button class="dropbtn">HTML</button>
@@ -34,7 +35,7 @@
     <div class="dropdown-content">
       <a href="css.html">CSS</a>
       <a href="selector.html">Selectores</a>
-      <a href="estilos-enlace.html">Estilos de enlaces</a>
+      <a href="estilos-enlace.html" aria-current="page">Estilos de enlaces</a>
     </div>
   </div>
   <div class="dropdown">
@@ -49,35 +50,35 @@
       <a href="js-demo.html">Demo</a>
     </div>
   </div>
-</div>
+</nav>
 
 <!-- // Contenido principal de la página -->
-<div class="main">
+<main class="main" id="contenido">
 
 
 <!-- // Imagen de ejemplo agregada (estilo W3Schools / fuente libre) -->
-<div class="card">
+<section class="card">
   <h2>Imagen de la página</h2>
   <p>Ejemplo de imagen usando la etiqueta <strong>&lt;img&gt;</strong> (como en W3Schools).</p>
   <div class="img-box">
     <img src="code.jpg" alt="Imagen de código de programación" width="400">
   </div>
-</div>
-<div class="card">
+</section>
+<section class="card">
   <h2>Estilos de hipervínculos</h2>
   <p><a href="index.html">Enlace de ejemplo</a></p>
   <p><a href="https://www.w3schools.com" target="_blank" rel="noopener">W3Schools</a></p>
   <div class="code">a { color: #2196F3; }
 a:hover { color: #4CAF50; }</div>
-</div>
+</section>
 
-</div>
+</main>
 
 <!-- // Pie de página -->
-<div class="footer">
+<footer class="footer">
   <p>Proyecto escolar · <a href="index.html">Inicio</a> ·
   <a href="https://www.w3schools.com" target="_blank" rel="noopener">W3Schools</a></p>
-</div>
+</footer>
 
 
 </body>

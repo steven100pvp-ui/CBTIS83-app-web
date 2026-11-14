@@ -3,20 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inicio</title>
+  <meta name="description" content="Sitio educativo para aprender HTML, CSS y JavaScript con ejemplos prácticos.">
+  <title>Inicio | Aprende Desarrollo Web</title>
   <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-
-<!-- // Header principal del sitio -->
-<div class="header">
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<header class="header">
   <h1>Construye Aplicaciones Web</h1>
   <p>HTML · CSS · JavaScript</p>
-</div>
-
-<!-- // Barra de navegación con menús desplegables -->
-<div class="navbar">
-  <a href="index.html" class="active">Inicio</a>
+</header>
+<nav class="navbar" aria-label="Navegación principal">
+  <a href="index.html" aria-current="page" class="active">Inicio</a>
   <div class="dropdown">
     <button class="dropbtn">HTML</button>
     <div class="dropdown-content">
@@ -49,62 +47,55 @@
       <a href="js-demo.html">Demo</a>
     </div>
   </div>
-</div>
+</nav>
+<main class="main" id="contenido">
+  <section class="hero card">
+    <p class="eyebrow">APRENDE · PRACTICA · CREA</p>
+    <h2>Construye tu primera aplicación web</h2>
+    <p>Explora los fundamentos del desarrollo web con ejemplos claros de HTML, CSS y JavaScript. Aprende a tu ritmo y practica cada concepto.</p>
+    <a class="btn" href="semantica.html">Comenzar a aprender</a>
+    <a class="text-link" href="multimedia.html">Ver contenido multimedia →</a>
+  </section>
 
-<!-- // Contenido principal de la página -->
-<div class="main">
+  <section class="section-heading">
+    <p class="eyebrow">RUTA DE APRENDIZAJE</p>
+    <h2>¿Qué encontrarás aquí?</h2>
+    <p>Selecciona un tema para consultar sus ejemplos y actividades.</p>
+  </section>
 
-
-<!-- // Imagen de ejemplo agregada (estilo W3Schools / fuente libre) -->
-<div class="card">
-  <h2>Imagen de la página</h2>
-  <p>Ejemplo de imagen usando la etiqueta <strong>&lt;img&gt;</strong> (como en W3Schools).</p>
-  <div class="img-box">
-    <img src="web-dev.jpg" alt="Imagen de desarrollo web (fuente libre)" width="400">
+  <div class="topic-grid">
+    <article class="topic-card">
+      <span class="topic-number">01</span><h3>HTML</h3>
+      <p>Organiza el contenido con etiquetas, listas, tablas, formularios e imágenes.</p>
+      <a href="semantica.html">Explorar HTML →</a>
+    </article>
+    <article class="topic-card">
+      <span class="topic-number">02</span><h3>CSS</h3>
+      <p>Personaliza colores, tipografías, espacios y la presentación de cada página.</p>
+      <a href="css.html">Explorar CSS →</a>
+    </article>
+    <article class="topic-card">
+      <span class="topic-number">03</span><h3>JavaScript</h3>
+      <p>Agrega lógica e interacción mediante variables, funciones, ciclos y DOM.</p>
+      <a href="js-intro.html">Explorar JavaScript →</a>
+    </article>
   </div>
-</div>
-<div class="card">
-  <h2>Bienvenida</h2>
-  <p>
-    Este sitio es una aplicación web de práctica con <strong>HTML</strong>,
-    <strong>CSS</strong> y <strong>JavaScript</strong>.
-  </p>
-  <p>
-    Aquí encontrarás ejemplos de estructura semántica, estilos, imágenes,
-    video, listas, tablas, formularios e interactividad con JavaScript.
-  </p>
-</div>
 
-<div class="card">
-  <h2>Contenido</h2>
-  <ul>
-    <li><a href="semantica.html">Estructura semántica HTML5</a></li>
-    <li><a href="multimedia.html">Imágenes y video</a></li>
-    <li><a href="listas.html">Listas</a></li>
-    <li><a href="tablas.html">Tablas</a></li>
-    <li><a href="formulario.html">Formulario</a></li>
-    <li><a href="hipervinculo.html">Hipervínculos</a></li>
-    <li><a href="js-demo.html">Demo de JavaScript</a></li>
-  </ul>
-  <h3>Temas de JavaScript</h3>
-  <ol>
-    <li><a href="js-intro.html">Introducción y variables</a></li>
-    <li><a href="js-condicionales.html">Condicionales</a></li>
-    <li><a href="js-funciones.html">Funciones</a></li>
-    <li><a href="js-for.html">Ciclo for</a></li>
-    <li><a href="js-dowhile.html">Ciclo do while</a></li>
-    <li><a href="js-dom.html">DOM</a></li>
-  </ol>
-</div>
-
-</div>
-
-<!-- // Pie de página -->
-<div class="footer">
-  <p>Proyecto escolar · <a href="index.html">Inicio</a> ·
+  <section class="card quick-links">
+    <h2>Accesos rápidos</h2>
+    <ul class="link-list">
+      <li><a href="formulario.html">Probar el formulario</a></li>
+      <li><a href="tablas.html">Consultar ejemplo de tablas</a></li>
+      <li><a href="listas.html">Ver tipos de listas</a></li>
+      <li><a href="hipervinculo.html">Practicar hipervínculos</a></li>
+      <li><a href="multimedia.html">Abrir imágenes y video</a></li>
+      <li><a href="js-demo.html">Probar la demostración JavaScript</a></li>
+    </ul>
+  </section>
+</main>
+<footer class="footer">
+  <p>Proyecto escolar · <a href="index.html" aria-current="page">Inicio</a> ·
   <a href="https://www.w3schools.com" target="_blank" rel="noopener">W3Schools</a></p>
-</div>
-
-
+</footer>
 </body>
 </html>

@@ -7,15 +7,16 @@
   <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
 
 <!-- // Header principal del sitio -->
-<div class="header">
+<header class="header">
   <h1>Construye Aplicaciones Web</h1>
   <p>HTML · CSS · JavaScript</p>
-</div>
+</header>
 
 <!-- // Barra de navegación con menús desplegables -->
-<div class="navbar">
+<nav class="navbar" aria-label="Navegación principal">
   <a href="index.html">Inicio</a>
   <div class="dropdown">
     <button class="dropbtn">HTML</button>
@@ -43,27 +44,27 @@
       <a href="js-intro.html">Intro y variables</a>
       <a href="js-condicionales.html">Condicionales</a>
       <a href="js-funciones.html">Funciones</a>
-      <a href="js-for.html">Ciclo for</a>
+      <a href="js-for.html" aria-current="page">Ciclo for</a>
       <a href="js-dowhile.html">Do while</a>
       <a href="js-dom.html">DOM</a>
       <a href="js-demo.html">Demo</a>
     </div>
   </div>
-</div>
+</nav>
 
 <!-- // Contenido principal de la página -->
-<div class="main">
+<main class="main" id="contenido">
 
 
 <!-- // Imagen de ejemplo agregada (estilo W3Schools / fuente libre) -->
-<div class="card">
+<section class="card">
   <h2>Imagen de la página</h2>
   <p>Ejemplo de imagen usando la etiqueta <strong>&lt;img&gt;</strong> (como en W3Schools).</p>
   <div class="img-box">
     <img src="web-dev.jpg" alt="Imagen de desarrollo web (fuente libre)" width="400">
   </div>
-</div>
-<div class="card">
+</section>
+<section class="card">
   <h2>Ciclo for</h2>
   <div class="code">for (let i = 1; i <= 10; i++) {
   document.write(i + "&lt;br&gt;");
@@ -73,15 +74,15 @@ let n = Number(prompt("Número"));
 for (let i = 1; i <= 10; i++) {
   document.write(n + " x " + i + " = " + (n * i) + "&lt;br&gt;");
 }</div>
-</div>
+</section>
 
-</div>
+</main>
 
 <!-- // Pie de página -->
-<div class="footer">
+<footer class="footer">
   <p>Proyecto escolar · <a href="index.html">Inicio</a> ·
   <a href="https://www.w3schools.com" target="_blank" rel="noopener">W3Schools</a></p>
-</div>
+</footer>
 
 
 </body>

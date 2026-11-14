@@ -7,20 +7,21 @@
   <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
 
 <!-- // Header principal del sitio -->
-<div class="header">
+<header class="header">
   <h1>Construye Aplicaciones Web</h1>
   <p>HTML · CSS · JavaScript</p>
-</div>
+</header>
 
 <!-- // Barra de navegación con menús desplegables -->
-<div class="navbar">
+<nav class="navbar" aria-label="Navegación principal">
   <a href="index.html">Inicio</a>
   <div class="dropdown">
     <button class="dropbtn">HTML</button>
     <div class="dropdown-content">
-      <a href="semantica.html">Semántica</a>
+      <a href="semantica.html" aria-current="page">Semántica</a>
       <a href="formulario.html">Formulario</a>
       <a href="tablas.html">Tablas</a>
       <a href="listas.html">Listas</a>
@@ -49,26 +50,26 @@
       <a href="js-demo.html">Demo</a>
     </div>
   </div>
-</div>
+</nav>
 
 <!-- // Contenido principal de la página -->
-<div class="main">
+<main class="main" id="contenido">
 
 
 <!-- // Imagen de ejemplo agregada (estilo W3Schools / fuente libre) -->
-<div class="card">
+<section class="card">
   <h2>Imagen de la página</h2>
   <p>Ejemplo de imagen usando la etiqueta <strong>&lt;img&gt;</strong> (como en W3Schools).</p>
   <div class="img-box">
     <img src="code.jpg" alt="Imagen de código de programación" width="400">
   </div>
-</div>
-<div class="card">
+</section>
+<section class="card">
   <h2>Etiquetas semánticas HTML5</h2>
   <p>Esta página usa <strong>header</strong>, <strong>nav</strong> (barra superior),
   contenedor principal y <strong>footer</strong>.</p>
   <table>
-    <tr><th>Etiqueta</th><th>Uso</th></tr>
+    <tr><th scope="col">Etiqueta</th><th scope="col">Uso</th></tr>
     <tr><td>&lt;header&gt;</td><td>Encabezado</td></tr>
     <tr><td>&lt;nav&gt;</td><td>Navegación</td></tr>
     <tr><td>&lt;main&gt; / secciones</td><td>Contenido principal</td></tr>
@@ -76,15 +77,15 @@
     <tr><td>&lt;footer&gt;</td><td>Pie de página</td></tr>
   </table>
   <p>Ayudan a organizar el contenido y mejoran la accesibilidad.</p>
-</div>
+</section>
 
-</div>
+</main>
 
 <!-- // Pie de página -->
-<div class="footer">
+<footer class="footer">
   <p>Proyecto escolar · <a href="index.html">Inicio</a> ·
   <a href="https://www.w3schools.com" target="_blank" rel="noopener">W3Schools</a></p>
-</div>
+</footer>
 
 
 </body>

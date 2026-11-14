@@ -7,15 +7,16 @@
   <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
 
 <!-- // Header principal del sitio -->
-<div class="header">
+<header class="header">
   <h1>Construye Aplicaciones Web</h1>
   <p>HTML · CSS · JavaScript</p>
-</div>
+</header>
 
 <!-- // Barra de navegación con menús desplegables -->
-<div class="navbar">
+<nav class="navbar" aria-label="Navegación principal">
   <a href="index.html">Inicio</a>
   <div class="dropdown">
     <button class="dropbtn">HTML</button>
@@ -45,39 +46,39 @@
       <a href="js-funciones.html">Funciones</a>
       <a href="js-for.html">Ciclo for</a>
       <a href="js-dowhile.html">Do while</a>
-      <a href="js-dom.html">DOM</a>
+      <a href="js-dom.html" aria-current="page">DOM</a>
       <a href="js-demo.html">Demo</a>
     </div>
   </div>
-</div>
+</nav>
 
 <!-- // Contenido principal de la página -->
-<div class="main">
+<main class="main" id="contenido">
 
 
 <!-- // Imagen de ejemplo agregada (estilo W3Schools / fuente libre) -->
-<div class="card">
+<section class="card">
   <h2>Imagen de la página</h2>
   <p>Ejemplo de imagen usando la etiqueta <strong>&lt;img&gt;</strong> (como en W3Schools).</p>
   <div class="img-box">
     <img src="gato.jpg" alt="Foto de un gato" width="400">
   </div>
-</div>
-<div class="card">
+</section>
+<section class="card">
   <h2>DOM</h2>
   <div class="code">document.getElementById("titulo").style.color = "red";
 document.getElementById("msg").innerHTML = "Hola";
 document.querySelector(".card").style.borderColor = "green";</div>
   <a class="btn" href="js-demo.html">Probar demo</a>
-</div>
+</section>
 
-</div>
+</main>
 
 <!-- // Pie de página -->
-<div class="footer">
+<footer class="footer">
   <p>Proyecto escolar · <a href="index.html">Inicio</a> ·
   <a href="https://www.w3schools.com" target="_blank" rel="noopener">W3Schools</a></p>
-</div>
+</footer>
 
 
 </body>

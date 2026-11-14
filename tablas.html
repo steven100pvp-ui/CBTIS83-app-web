@@ -7,22 +7,23 @@
   <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
 
 <!-- // Header principal del sitio -->
-<div class="header">
+<header class="header">
   <h1>Construye Aplicaciones Web</h1>
   <p>HTML · CSS · JavaScript</p>
-</div>
+</header>
 
 <!-- // Barra de navegación con menús desplegables -->
-<div class="navbar">
+<nav class="navbar" aria-label="Navegación principal">
   <a href="index.html">Inicio</a>
   <div class="dropdown">
     <button class="dropbtn">HTML</button>
     <div class="dropdown-content">
       <a href="semantica.html">Semántica</a>
       <a href="formulario.html">Formulario</a>
-      <a href="tablas.html">Tablas</a>
+      <a href="tablas.html" aria-current="page">Tablas</a>
       <a href="listas.html">Listas</a>
       <a href="etiqueta.html">Etiquetas</a>
       <a href="hipervinculo.html">Hipervínculos</a>
@@ -49,28 +50,28 @@
       <a href="js-demo.html">Demo</a>
     </div>
   </div>
-</div>
+</nav>
 
 <!-- // Contenido principal de la página -->
-<div class="main">
+<main class="main" id="contenido">
 
 
 <!-- // Imagen de ejemplo agregada (estilo W3Schools / fuente libre) -->
-<div class="card">
+<section class="card">
   <h2>Imagen de la página</h2>
   <p>Ejemplo de imagen usando la etiqueta <strong>&lt;img&gt;</strong> (como en W3Schools).</p>
   <div class="img-box">
     <img src="html.jpg" alt="Imagen de código HTML" width="400">
   </div>
-</div>
-<div class="card">
+</section>
+<section class="card">
   <h2>Tablas HTML</h2>
   <table>
     <caption>Lista de compañeros</caption>
     <tr>
-      <th>Nombre</th>
-      <th>Apellido</th>
-      <th>Edad</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Apellido</th>
+      <th scope="col">Edad</th>
     </tr>
     <tr>
       <td>Uriel Aldahir</td>
@@ -94,15 +95,15 @@
     </tr>
   </table>
   <p>Se usan las etiquetas table, tr, th y td con bordes visibles.</p>
-</div>
+</section>
 
-</div>
+</main>
 
 <!-- // Pie de página -->
-<div class="footer">
+<footer class="footer">
   <p>Proyecto escolar · <a href="index.html">Inicio</a> ·
   <a href="https://www.w3schools.com" target="_blank" rel="noopener">W3Schools</a></p>
-</div>
+</footer>
 
 
 </body>

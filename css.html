@@ -7,15 +7,16 @@
   <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
 
 <!-- // Header principal del sitio -->
-<div class="header">
+<header class="header">
   <h1>Construye Aplicaciones Web</h1>
   <p>HTML · CSS · JavaScript</p>
-</div>
+</header>
 
 <!-- // Barra de navegación con menús desplegables -->
-<div class="navbar">
+<nav class="navbar" aria-label="Navegación principal">
   <a href="index.html">Inicio</a>
   <div class="dropdown">
     <button class="dropbtn">HTML</button>
@@ -32,7 +33,7 @@
   <div class="dropdown">
     <button class="dropbtn">CSS</button>
     <div class="dropdown-content">
-      <a href="css.html">CSS</a>
+      <a href="css.html" aria-current="page">CSS</a>
       <a href="selector.html">Selectores</a>
       <a href="estilos-enlace.html">Estilos de enlaces</a>
     </div>
@@ -49,21 +50,21 @@
       <a href="js-demo.html">Demo</a>
     </div>
   </div>
-</div>
+</nav>
 
 <!-- // Contenido principal de la página -->
-<div class="main">
+<main class="main" id="contenido">
 
 
 <!-- // Imagen de ejemplo agregada (estilo W3Schools / fuente libre) -->
-<div class="card">
+<section class="card">
   <h2>Imagen de la página</h2>
   <p>Ejemplo de imagen usando la etiqueta <strong>&lt;img&gt;</strong> (como en W3Schools).</p>
   <div class="img-box">
     <img src="web-dev.jpg" alt="Imagen de desarrollo web (fuente libre)" width="400">
   </div>
-</div>
-<div class="card">
+</section>
+<section class="card">
   <h2>CSS externo</h2>
   <p>Este sitio usa el archivo <strong>estilos.css</strong>.</p>
   <div class="code">&lt;link rel="stylesheet" href="estilos.css"&gt;</div>
@@ -74,15 +75,15 @@
     <li>Externo (.css) — recomendado</li>
   </ol>
   <p>El diseño es responsivo: en pantallas pequeñas el menú se apila en vertical.</p>
-</div>
+</section>
 
-</div>
+</main>
 
 <!-- // Pie de página -->
-<div class="footer">
+<footer class="footer">
   <p>Proyecto escolar · <a href="index.html">Inicio</a> ·
   <a href="https://www.w3schools.com" target="_blank" rel="noopener">W3Schools</a></p>
-</div>
+</footer>
 
 
 </body>

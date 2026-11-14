@@ -1,0 +1,12 @@
+WEBLAB — VERSIÓN FINAL RESPONSIVE
+
+IMPORTANTE PARA QUE EL DISEÑO SE VEA:
+1. Descomprime este ZIP.
+2. En GitHub abre el repositorio que publica tu sitio.
+3. Sube TODOS los archivos que están directamente dentro de esta carpeta (no subas la carpeta contenedora).
+4. Acepta reemplazar index.html, style.css y los demás archivos cuando GitHub lo pregunte.
+5. Espera a que GitHub Pages termine de publicar y recarga la página.
+
+La página principal es index.html. La hoja de estilos es style.css y el menú usa app.js.
+Mantén juntos todos los HTML, style.css, app.js, imágenes y video.mp4.
+El enlace “Saltar al contenido” queda oculto hasta que se enfoca con teclado.

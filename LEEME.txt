@@ -1,0 +1,14 @@
+PROYECTO WEBLAB — DISEÑO RESPONSIVE
+=================================
+
+1. Descomprime toda la carpeta.
+2. Abre index.html en tu navegador o publica la carpeta completa en GitHub Pages.
+3. En computadora, los menús desplegables aparecen al pasar el cursor o usar el teclado.
+4. En celular, toca “Menú” y después HTML, CSS o JavaScript para abrir cada sección.
+5. multimedia.html contiene la galería de imágenes y el video local.
+
+IMPORTANTE: conserva juntos todos los archivos HTML, estilos.css, app.js, imágenes y video.mp4.
+
+El proyecto incluye estructura semántica HTML5, diseño adaptable, estilos CSS externos,
+imágenes con texto alternativo, hipervínculos, listas, tablas, formulario, video con controles,
+mensajes visuales y navegación accesible.
